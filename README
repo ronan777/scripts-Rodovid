@@ -1,0 +1,6 @@
+This directory contains scripts to manipulate genealogical data 
+available in the wiki site Rodovid (en.rodovid.org)
+
+extract_numbers.pl is a Perl script to extract a complete set of files. 
+The command line should contain the Rodovid Person number as the only argument.
+The complete set of files, one per person that link to the input person will be written in the current directory. In addition, a file UniquePersons will contain all the numbers of the Person given as input. 
