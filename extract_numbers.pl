@@ -92,7 +92,10 @@ while ($Still_more) {
            print "Person $Person already done","\n";
            next ;   
     } 
-
+    if ( -e "Person:$Person") {
+    	   print "File already exists","\n";
+    	   next ;
+    }
     if($Person_is_done && $numb == $#allUniquePersons+1 ) {
            $Still_more = 0 ;  
     } 
